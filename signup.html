@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img
+        class="satoryLogo"
+        src="./assets/gojoHeartSign.jpg"
+        alt="Satoru Gojo Cute Image"
+      />
+
+      <nav class="navLogin-SignUp">
+        <img
+          class="backArrow"
+          src="./assets/back-arrow.png"
+          onclick="window.location.href='index.html'"
+          alt="Back Arrow Image"
+        />
+        <a href="index.html" alt="Home Link">GO BACK</a>
+      </nav>
+    </header>
+
+    <section class="signup">
+      <img
+        class="gojoinfinity_2"
+        src="./assets/gojoinfinity.jpg"
+        alt="Gojo Infinity Image"
+      />
+
+      <div class="flex-signUpForm">
+        <h1 class="signup-text">Signup</h1>
+        <form class="signUpForm" name="signUpForm">
+          <label>Username</label>
+          <input class="inputText" type="text" placeholder="Username" />
+          <label>Password</label>
+          <input class="inputText" type="text" placeholder="password" />
+          <label>Confirm Password</label>
+          <input class="inputText" type="text" placeholder="Confirm password" />
+          <div class="btn-form">
+            <input class="btn signup-btn_2" type="button" value="Signup" />
+            <input
+              class="btn login-btn_2"
+              type="button"
+              value="Login"
+              onclick="window.location.href='login.html'"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

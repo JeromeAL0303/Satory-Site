@@ -1,0 +1,503 @@
+@font-face {
+  font-family: Abadi Extra Light;
+  src: url("./font/Abadi-Extra-Light.ttf");
+}
+
+@font-face {
+  font-family: Gill Sans Nova Ultra Bold;
+  src: url("./font/Gill-Sans-Nova-Ultra-Bold.ttf");
+}
+
+@font-face {
+  font-family: Signika;
+  src: url("./font/Signika-VariableFont_GRAD\,wght.ttf");
+}
+
+* {
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  z-index: 999;
+}
+
+h1 {
+  text-align: justify;
+  font-family: Gill Sans Nova Ultra Bold;
+}
+
+p {
+  font-family: Abadi Extra Light;
+}
+
+nav {
+  flex-basis: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav > a {
+  text-decoration: none;
+  font-family: Signika;
+}
+
+.satoryLogo {
+  width: 40px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/GOJO.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+.welcomeImage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.gojoFormal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 0 10px;
+}
+
+.formalGojoImage {
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.about {
+  height: 100vh;
+  background-color: #0b192c;
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 10vh 0 0 0;
+  height: 90vh;
+}
+
+.gojoAbout {
+  width: 30%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.aboutus_1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus_2 {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-aboutus_1,
+.flex-aboutus_2 {
+  width: 70%;
+  text-align: start;
+}
+
+.image_1 {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_2 {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.flex-getintouch {
+  height: 50vh;
+  background-color: #a0153e;
+  display: flex;
+  justify-content: center;
+}
+
+.getintouch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10vh 0 0 0;
+  height: 40vh;
+  width: 60%;
+}
+
+.text-getintouch {
+  font-size: 40px;
+  margin: 0 0 0 10px;
+}
+
+.detail {
+  height: 40vh;
+  background-color: #180161;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  height: 10vh;
+  background-color: #2e073f;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.gojoyoung {
+  width: 25%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.gojocake,
+.gojobaby {
+  width: 20%;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 10px 0 10px;
+}
+
+/*Login/SignUp Page*/
+
+.head {
+  position: relative;
+  top: 0;
+  background-color: #2e073f;
+  height: 10vh;
+}
+
+.login,
+.signup {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gojoinfinity_1 {
+  width: 100%;
+  height: 90vh;
+  order: 1;
+}
+
+.gojoinfinity_2 {
+  width: 100%;
+  height: 90vh;
+  order: 2;
+}
+
+.flex-loginForm {
+  background-color: #180161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
+
+.flex-signUpForm {
+  background-color: #a0153e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.loginForm,
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.inputText {
+  width: 100%;
+}
+
+.login-text,
+.signup-text {
+  font-size: 50px;
+}
+
+.btn {
+  color: black;
+}
+
+label {
+  font-family: signika;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5vh 0 0 0;
+}
+
+.forgetPassLink {
+  color: rgb(124, 80, 194);
+  font-size: 11px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 50px;
+  color: white;
+}
+
+.login-btn_1,
+.signup-btn_1,
+.login-btn_2,
+.signup-btn_2 {
+  cursor: pointer;
+}
+
+.login-btn_1,
+.login-btn_2 {
+  padding: 10px 30px 10px 30px;
+}
+
+.signup-btn_1,
+.signup-btn_2 {
+  padding: 10px 25px 10px 25px;
+}
+
+.login-btn_1 {
+  background-color: #2e073f;
+}
+
+.signup-btn_1 {
+  background-color: #a0153e;
+}
+
+.login-btn_2 {
+  background-color: #180161;
+}
+
+.signup-btn_2 {
+  background-color: #2e073f;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.menuIcon {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navigationBarSide {
+  position: fixed;
+  top: 20vh;
+  right: 0;
+  height: 90vh;
+  width: 50%;
+  background-color: #2e073f3b;
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.navigationBarSide > a {
+  text-decoration: none;
+  font-family: signika;
+  padding: 0 0 0 20px;
+}
+
+.inputText {
+  margin: 10px 0 10px 0;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 10% 10px 10%;
+  color: black;
+  width: 80%;
+}
+
+.text-about_2 {
+  position: absolute;
+  visibility: hidden;
+}
+
+.navLogin-SignUp {
+  flex-basis: 100px;
+}
+
+.backArrow {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.detailImage {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 12px;
+  }
+
+  .visibility {
+    visibility: visible;
+  }
+  .navBar {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .menuIcon {
+    position: relative;
+    visibility: visible;
+  }
+
+  .grid-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .aboutus_1 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .aboutus_2 {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+
+  .image_1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .image_2 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .text-about_1 {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .text-about_2 {
+    position: relative;
+    visibility: visible;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .gojoAbout {
+    width: 20%;
+    height: auto;
+  }
+
+  .text-getintouch {
+    font-size: 16px;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+  }
+
+  .welcomeImage,
+  .gojoFormal {
+    margin: 0;
+  }
+
+  .welcomeImage {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .gojoFormal {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .formalGojoImage {
+    width: 25%;
+    height: auto;
+  }
+
+  .contact-detail > p {
+    font-size: 11px;
+  }
+
+  footer {
+    font-size: 9px;
+  }
+
+  .login,
+  .signup {
+    grid-template-columns: 1fr;
+  }
+
+  .gojoinfinity_1,
+  .gojoinfinity_2 {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .login-text,
+  .signup-text {
+    font-size: 32px;
+  }
+
+  .loginForm,
+  .signUpForm {
+    width: 70%;
+  }
+}
